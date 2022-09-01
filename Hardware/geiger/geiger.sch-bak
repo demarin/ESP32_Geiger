@@ -1,0 +1,216 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L device:Transformer_1P_2S T1
+U 1 1 5F810A75
+P 4650 3350
+F 0 "T1" H 4650 2725 50  0000 C CNN
+F 1 "Transformer_1P_2S" H 4650 2816 50  0000 C CNN
+F 2 "Transformers_CHK:Trafo_CHK-EI48-10VA_2xSec" H 4650 3350 50  0001 C CNN
+F 3 "" H 4650 3350 50  0001 C CNN
+	1    4650 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:D D1
+U 1 1 5F8145A7
+P 4050 3600
+F 0 "D1" V 4004 3679 50  0000 L CNN
+F 1 "кд510а" V 4095 3679 50  0000 L CNN
+F 2 "Diodes_THT:D_5KPW_P12.70mm_Horizontal" H 4050 3600 50  0001 C CNN
+F 3 "" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L device:CP C1
+U 1 1 5F8150CA
+P 2800 3600
+F 0 "C1" H 2918 3646 50  0000 L CNN
+F 1 "200uf 10v" H 2918 3555 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 2838 3450 50  0001 C CNN
+F 3 "" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP C2
+U 1 1 5F81587B
+P 3500 3600
+F 0 "C2" H 3618 3646 50  0000 L CNN
+F 1 "3.3uf 15v" H 3618 3555 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Axial_L10.0mm_D6.0mm_P15.00mm_Horizontal" H 3538 3450 50  0001 C CNN
+F 3 "" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C3
+U 1 1 5F816243
+P 6050 3350
+F 0 "C3" H 5935 3304 50  0000 R CNN
+F 1 "C" H 5935 3395 50  0000 R CNN
+F 2 "Capacitors_THT:CP_Axial_L11.0mm_D5.0mm_P18.00mm_Horizontal" H 6088 3200 50  0001 C CNN
+F 3 "" H 6050 3350 50  0001 C CNN
+	1    6050 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5F816BBE
+P 3150 3350
+F 0 "R1" H 3220 3396 50  0000 L CNN
+F 1 "39k" H 3220 3305 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3080 3350 50  0001 C CNN
+F 3 "" H 3150 3350 50  0001 C CNN
+	1    3150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D2
+U 1 1 5F817339
+P 5350 3150
+F 0 "D2" H 5350 2934 50  0000 C CNN
+F 1 "D" H 5350 3025 50  0000 C CNN
+F 2 "Diodes_THT:D_5KPW_P12.70mm_Horizontal" H 5350 3150 50  0001 C CNN
+F 3 "" H 5350 3150 50  0001 C CNN
+	1    5350 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:D D3
+U 1 1 5F817A0C
+P 5800 3150
+F 0 "D3" H 5800 2934 50  0000 C CNN
+F 1 "D" H 5800 3025 50  0000 C CNN
+F 2 "Diodes_THT:D_5KPW_P12.70mm_Horizontal" H 5800 3150 50  0001 C CNN
+F 3 "" H 5800 3150 50  0001 C CNN
+	1    5800 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 3150 5200 3150
+Wire Wire Line
+	5500 3150 5650 3150
+Wire Wire Line
+	5950 3150 6050 3150
+Wire Wire Line
+	6050 3150 6050 3200
+Wire Wire Line
+	5050 3550 6050 3550
+Wire Wire Line
+	6050 3550 6050 3500
+Wire Wire Line
+	4250 2950 4050 2950
+Wire Wire Line
+	4050 2950 4050 3450
+Wire Wire Line
+	4050 3450 4250 3450
+Connection ~ 4050 3450
+Wire Wire Line
+	4250 3750 4050 3750
+$Comp
+L device:Q_NPN_BCE Q1
+U 1 1 5F813469
+P 3950 4150
+F 0 "Q1" H 4141 4196 50  0000 L CNN
+F 1 "Q_NPN_BCE" H 4141 4105 50  0000 L CNN
+F 2 "Transistors_OldSowjetAera:OldSowjetaera_Transistor_Type-I_BigPads" H 4150 4250 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3750 4050 3950
+Connection ~ 4050 3750
+Wire Wire Line
+	3500 3450 3500 3250
+Wire Wire Line
+	3500 3250 4250 3250
+Wire Wire Line
+	3150 3500 3150 4150
+Wire Wire Line
+	3150 4150 3500 4150
+Wire Wire Line
+	3150 3200 3150 2950
+Wire Wire Line
+	3150 2950 4050 2950
+Connection ~ 4050 2950
+Wire Wire Line
+	3150 2950 2800 2950
+Wire Wire Line
+	2800 2950 2800 3450
+Connection ~ 3150 2950
+$Comp
+L power:Earth #PWR0101
+U 1 1 5F822E27
+P 2800 4550
+F 0 "#PWR0101" H 2800 4300 50  0001 C CNN
+F 1 "Earth" H 2800 4400 50  0001 C CNN
+F 2 "" H 2800 4550 50  0001 C CNN
+F 3 "" H 2800 4550 50  0001 C CNN
+	1    2800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0102
+U 1 1 5F823FE4
+P 2800 2900
+F 0 "#PWR0102" H 2800 2750 50  0001 C CNN
+F 1 "+9V" H 2815 3073 50  0000 C CNN
+F 2 "" H 2800 2900 50  0001 C CNN
+F 3 "" H 2800 2900 50  0001 C CNN
+	1    2800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 2900 2800 2950
+Connection ~ 2800 2950
+Wire Wire Line
+	2800 3750 2800 4450
+Wire Wire Line
+	4050 4350 4050 4450
+Connection ~ 2800 4450
+Wire Wire Line
+	2800 4450 2800 4550
+Wire Wire Line
+	6050 3550 6050 4450
+Wire Wire Line
+	2800 4450 4050 4450
+Connection ~ 6050 3550
+Connection ~ 4050 4450
+Wire Wire Line
+	4050 4450 6050 4450
+Wire Wire Line
+	6050 3150 6450 3150
+Connection ~ 6050 3150
+$Comp
+L conn:TEST_1P J1
+U 1 1 5F826F1D
+P 6450 3150
+F 0 "J1" H 6508 3268 50  0000 L CNN
+F 1 "TEST_1P" H 6508 3177 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 6650 3150 50  0001 C CNN
+F 3 "" H 6650 3150 50  0001 C CNN
+	1    6450 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3750 3500 4150
+Connection ~ 3500 4150
+Wire Wire Line
+	3500 4150 3750 4150
+$EndSCHEMATC
